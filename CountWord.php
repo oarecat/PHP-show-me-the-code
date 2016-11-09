@@ -3,7 +3,7 @@
 function word_count($sentence){ 
 	$parrten = "/[a-zA-Z]+/";
   	preg_match_all($parrten,$sentence,$arr,PREG_SET_ORDER);
-    return count($arr); 
+    	return count($arr); 
 } 
 $word = file_get_contents("./content.txt");
 echo $word.'<br/>';
